@@ -276,6 +276,9 @@ function words(options) {
   }
 
   function randInt(lessThan) {
+    if (lessThan <= 1) {
+      return 0;
+    }
     return crypto.randomInt(Math.floor(lessThan) - 1);
   }
 
