@@ -1,3 +1,5 @@
+var crypto = require('crypto');
+
 var wordList = [
   // Borrowed from xkcd password generator which borrowed it from wherever
   "ability","able","aboard","about","above","accept","accident","according",
@@ -274,7 +276,7 @@ function words(options) {
   }
 
   function randInt(lessThan) {
-    return Math.floor(Math.random() * lessThan);
+    return crypto.randomInt(Math.floor(lessThan) - 1);
   }
 
   // No arguments = generate one word

@@ -1,4 +1,6 @@
-# random-words
+# random-words (node.js crypto fork)
+
+This is a fork of [random-words](https://github.com/apostrophecms/random-words) that uses the node.js `crypto.randomInt` function instead of `Math.random`. Use at your own peril.
 
 ## Generate one or more common English words
 
